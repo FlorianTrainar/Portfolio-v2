@@ -111,6 +111,9 @@
     position: absolute;
     top: 0;
   }
+  #projects > div > button:first-child {
+    left: 0;
+  }
   #projects > div > button:last-child {
     right: 0;
   }
