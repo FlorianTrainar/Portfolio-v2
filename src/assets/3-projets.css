@@ -124,11 +124,19 @@
 }
 
 @media (max-width: 600px) {
+  .carrousel {
+    width: 100%;
+  }
   .titleZone {
-    width: 90%;
+    width: 70%;
+    justify-content: center;
+    gap: 4px;
+  }
+  .titleZone > a > svg {
+    font-size: 35px;
   }
   .slide img {
-    width: 90%;
+    width: 80%;
   }
 
   .slide ul {
@@ -137,11 +145,14 @@
   .slide li {
     font-size: 13px;
   }
-  #projects > div > button {
-    height: 300px;
+  #projects > div {
+    position: relative;
   }
-
-  #projects > div > button > svg {
-    font-size: 30px;
+  #projects > div > button {
+    position: absolute;
+    top: 0;
+  }
+  #projects > div > button:last-child {
+    right: 0;
   }
 }

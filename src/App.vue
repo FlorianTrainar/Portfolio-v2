@@ -92,7 +92,7 @@ const projectScroll = (dir) => {
         <h3>Projets</h3>
         <p>Voici quelques-un de mes projets, réalisés avec amour :</p>
         <div>
-          <button @click="projectScroll('left')">
+          <button class="project-big-button" @click="projectScroll('left')">
             <font-awesome-icon :icon="['fas', 'caret-left']" />
           </button>
           <div class="carrousel" ref="track">
@@ -118,7 +118,7 @@ const projectScroll = (dir) => {
               </div>
             </div>
           </div>
-          <button @click="projectScroll('right')">
+          <button class="project-big-button" @click="projectScroll('right')">
             <font-awesome-icon :icon="['fas', 'caret-right']" />
           </button>
         </div>

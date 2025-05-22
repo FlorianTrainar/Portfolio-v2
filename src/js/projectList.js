@@ -37,7 +37,7 @@ export const projectList = [
       info: 'Photo Roamer Helper',
       url: '../src/img/img-roamerhelper.png',
     },
-    url: 'https://roamer-helper.netlify.app/',
+    url: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928254/img-roamerhelper_jj03bn.png',
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const projectList = [
       info: 'Photo Mario',
       url: '../src/img/img-mario.png',
     },
-    url: 'https://ft-mario.netlify.app/',
+    url: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928251/img-mario_yaryol.png',
   },
   {
     id: 4,
@@ -75,72 +75,72 @@ export const projectList = [
       info: 'Photo EasyJet',
       url: '../src/img/img-easyjet.png',
     },
-    url: 'https://easyjet-front-replication.netlify.app/',
+    url: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928252/img-easyjet_vbpiuf.png',
   },
 ]
 
 export const techList = [
   {
     tech: 'HTML',
-    logo: '../src/img/logo-html.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928178/logo-html_fbrfpg.png',
   },
   {
     tech: 'CSS',
-    logo: '../src/img/logo-css.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928178/logo-css_hyhdgu.png',
   },
   {
     tech: 'JavaScript',
-    logo: '../src/img/logo-javascript.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928178/logo-javascript_qku1at.png',
   },
   {
     tech: 'Vue.JS',
-    logo: '../src/img/logo-vue.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928177/logo-vue_m6foni.png',
   },
   {
     tech: 'Strapi',
-    logo: '../src/img/logo-strapi.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928472/logo-strapi_uz0ylc.png',
   },
   {
     tech: 'SQLite',
-    logo: '../src/img/logo-sqlite.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928180/logo-sqlite_j2fyzg.png',
   },
   {
     tech: 'PostgreSQL',
-    logo: '../src/img/logo-postgre.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928180/logo-postgre_ulyplv.png',
   },
   {
     tech: 'Northflank',
-    logo: '../src/img/logo-northflank.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928179/logo-northflank_ynsorl.png',
   },
   {
     tech: 'Netlify',
-    logo: '../src/img/logo-netlify.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928181/logo-netlify_f05q4v.png',
   },
   {
     tech: 'Cloudinary',
-    logo: '../src/img/logo-cloudinary.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928179/logo-cloudinary_tfv7gz.png',
   },
 ]
 
 export const techFuturList = [
   {
     tech: 'Node.JS',
-    logo: '../src/img/logo-node.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928179/logo-node_pfce1m.png',
   },
   {
     tech: 'React',
-    logo: '../src/img/logo-react.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928178/logo-react_rzr1dq.png',
   },
   {
     tech: 'Next.js',
-    logo: '../src/img/logo-next.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928178/logo-next_fkcy6g.png',
   },
   {
     tech: 'Mongo.DB',
-    logo: '../src/img/logo-mongo.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928179/logo-mongo_nrs7af.png',
   },
   {
     tech: 'Tailwind',
-    logo: '../src/img/logo-tailwind.png',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928177/logo-tailwind_xkyhz2.png',
   },
 ]

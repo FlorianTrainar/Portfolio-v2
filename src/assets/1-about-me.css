@@ -3,7 +3,10 @@
 .small-title {
   display: none;
 }
-
+.big-title,
+.small-title {
+  margin-left: 10px;
+}
 #about-me > div {
   display: flex;
   align-items: center;
@@ -67,5 +70,14 @@
   .avatar {
     width: 105px;
     height: 110px;
+  }
+}
+@media (max-width: 400px) {
+  #about-me > div > div {
+    gap: 10px;
+  }
+  .avatar {
+    width: 90px;
+    height: 100px;
   }
 }

@@ -40,3 +40,18 @@
     text-align: left;
   }
 }
+@media (max-width: 450px) {
+  #education > p {
+    margin-bottom: 20px;
+  }
+  #education > div {
+    margin-bottom: 40px;
+  }
+  #education > div > div {
+    width: 100px;
+  }
+  #education div > div > img {
+    margin: 8px 0 20px 0;
+    height: 50px;
+  }
+}
