@@ -1,0 +1,59 @@
+/* header */
+
+header {
+  border-bottom: solid 1px white;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(20px);
+  z-index: 1;
+}
+
+header nav {
+  height: 100px;
+  display: flex;
+}
+
+header nav a {
+  font-size: 20px;
+
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer */
+
+footer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: #c4c4c4;
+  line-height: 40px;
+}
+
+footer a {
+  color: #fcc01a;
+  line-height: 40px;
+}
+
+footer a:hover {
+  color: #190f33;
+}
+
+/*  */
+/* Media QUery */
+/*  */
+@media (max-width: 600px) {
+  header nav a {
+    font-size: 18px;
+  }
+  footer {
+    height: 150px;
+  }
+}

@@ -1,0 +1,42 @@
+/* Skills */
+
+#education > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#education > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+
+#education > p {
+  margin-bottom: 60px;
+  text-align: center;
+}
+#education > div > div > p {
+  text-align: center;
+  font-style: italic;
+}
+
+#education div > div > img {
+  margin: 8px 0 50px 0;
+  height: 60px;
+}
+#education div > div:hover {
+  scale: 120%;
+  transition: 0.5s ease-in;
+}
+
+/*  */
+/* Media Query */
+/*  */
+
+@media (max-width: 860px) {
+  #education > p {
+    text-align: left;
+  }
+}
