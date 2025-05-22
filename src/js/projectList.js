@@ -35,9 +35,9 @@ export const projectList = [
     description: 'blabla',
     picture: {
       info: 'Photo Roamer Helper',
-      url: '../src/img/img-roamerhelper.png',
+      url: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928254/img-roamerhelper_jj03bn.png',
     },
-    url: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928254/img-roamerhelper_jj03bn.png',
+    url: 'https://roamer-helper.netlify.app/',
   },
   {
     id: 3,
@@ -55,9 +55,9 @@ export const projectList = [
     description: 'blabla',
     picture: {
       info: 'Photo Mario',
-      url: '../src/img/img-mario.png',
+      url: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928251/img-mario_yaryol.png',
     },
-    url: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928251/img-mario_yaryol.png',
+    url: 'https://ft-mario.netlify.app/',
   },
   {
     id: 4,
@@ -73,9 +73,9 @@ export const projectList = [
     description: 'blabla',
     picture: {
       info: 'Photo EasyJet',
-      url: '../src/img/img-easyjet.png',
+      url: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928252/img-easyjet_vbpiuf.png',
     },
-    url: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928252/img-easyjet_vbpiuf.png',
+    url: 'https://easyjet-front-replication.netlify.app/',
   },
 ]
 
