@@ -1,6 +1,5 @@
 export const projectList = [
   {
-    id: 1,
     title: 'LeBonCoin',
     type: 'Reproduction Full-Stack',
     features: [
@@ -21,7 +20,25 @@ export const projectList = [
     url: 'https://leboncoinreplication.netlify.app/',
   },
   {
-    id: 2,
+    title: 'Letterboxd',
+    type: 'Reproduction Full-Stack',
+    features: [
+      'Back-End personnalisé (Supabase)',
+      'Hebergement Back-End (Northflank)',
+      'Inscription / connexion',
+      'Création / Suppression de reviews',
+      'Tri / Pagination / Recherche',
+      'Gestion watchlists / likes',
+      'Utilisation Api TMDB',
+    ],
+    description: 'blabla',
+    picture: {
+      info: 'Photo Letterboxd',
+      url: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1767762167/Letterboxd_ivicvk.png',
+    },
+    url: 'https://letterboxd-replication.netlify.app/',
+  },
+  {
     title: 'Roamer-Helper',
     type: 'Création originale',
     features: [
@@ -30,7 +47,7 @@ export const projectList = [
       'Convertisseur de devises',
       'Fuseaux horaires',
       'Session Storage',
-      'Réactivité / Rafrachissement',
+      'Réactivité',
     ],
     description: 'blabla',
     picture: {
@@ -40,7 +57,6 @@ export const projectList = [
     url: 'https://roamer-helper.netlify.app/',
   },
   {
-    id: 3,
     title: 'Mario',
     type: 'HTML Game',
     features: [
@@ -60,7 +76,6 @@ export const projectList = [
     url: 'https://ft-mario.netlify.app/',
   },
   {
-    id: 4,
     title: 'EasyJet',
     type: 'Reproduction Front-End',
     features: [
@@ -89,12 +104,24 @@ export const techList = [
     logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928178/logo-css_hyhdgu.png',
   },
   {
+    tech: 'Tailwind',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928177/logo-tailwind_xkyhz2.png',
+  },
+  {
     tech: 'JavaScript',
     logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928178/logo-javascript_qku1at.png',
   },
   {
     tech: 'Vue.JS',
     logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928177/logo-vue_m6foni.png',
+  },
+  {
+    tech: 'Firebase',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1767760144/logo-firebase_hcc3ij.png',
+  },
+  {
+    tech: 'Supabase',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1767760144/logo-supabase_u3gvdk.png',
   },
   {
     tech: 'Strapi',
@@ -109,12 +136,12 @@ export const techList = [
     logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928180/logo-postgre_ulyplv.png',
   },
   {
-    tech: 'Northflank',
-    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928179/logo-northflank_ynsorl.png',
-  },
-  {
     tech: 'Netlify',
     logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928181/logo-netlify_f05q4v.png',
+  },
+  {
+    tech: 'Northflank',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928179/logo-northflank_ynsorl.png',
   },
   {
     tech: 'Cloudinary',
@@ -124,12 +151,16 @@ export const techList = [
 
 export const techFuturList = [
   {
-    tech: 'Node.JS',
-    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928179/logo-node_pfce1m.png',
+    tech: 'React JS',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928178/logo-react_rzr1dq.png',
   },
   {
-    tech: 'React',
-    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928178/logo-react_rzr1dq.png',
+    tech: 'React Native',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1767760628/logo-react-native_hrouhv.png',
+  },
+  {
+    tech: 'Node.js',
+    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928179/logo-node_pfce1m.png',
   },
   {
     tech: 'Next.js',
@@ -138,9 +169,5 @@ export const techFuturList = [
   {
     tech: 'Mongo.DB',
     logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928179/logo-mongo_nrs7af.png',
-  },
-  {
-    tech: 'Tailwind',
-    logo: 'https://res.cloudinary.com/dnq2ftd45/image/upload/v1747928177/logo-tailwind_xkyhz2.png',
   },
 ]

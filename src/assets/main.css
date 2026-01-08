@@ -1,17 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import './base.css';
-@import './header-footer.css';
-@import './1-about-me.css';
-@import './2-skills.css';
-@import './3-projets.css';
-@import './4-contact.css';
 
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --background-color1-: #170a37;
-  --background-color2-: #2f0e31;
+  --background-color1-: #010f09;
+  --background-color2-: #131c14;
   --orange-color-: orange;
   --green-color-: rgb(137, 194, 112);
 }
@@ -29,59 +28,27 @@ body {
 }
 
 .wrapper {
-  width: 1024px;
-  margin: 0 auto;
-  /* border: blue solid 1px; */
-}
-
-h1 {
-  color: white;
-  font-size: 38px;
-}
-
-h2 {
-  font-size: 30px;
-  color: white;
-  font-style: italic;
+  @apply mx-auto w-[90vw] max-w-5xl;
 }
 
 h3 {
-  font-size: 26px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 40px;
-}
-
-h4 {
-  font-size: 18px;
-  font-weight: bold;
-  /* font-style: italic; */
-  margin-bottom: 20px;
-  color: white;
+  @apply text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-12;
 }
 
 p {
-  line-height: 30px;
-  color: white;
-}
-li {
-  color: white;
-  font-style: italic;
+  @apply leading-5 md:leading-8 text-white  text-sm md:text-base lg:text-lg;
 }
 
-span {
-  font-weight: bold;
+li {
+  @apply text-white italic;
 }
 
 a {
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
+  @apply font-bold text-white;
 }
 a:hover {
   color: var(--orange-color-);
 }
-
 button {
   background: none;
 }
@@ -89,49 +56,11 @@ button:hover {
   cursor: pointer;
 }
 
-/* main */
-
 section {
-  padding: 80px;
+  @apply px-4 md:px-10 pt-10 pb-16;
   scroll-margin-top: 80px;
 }
 
 main a {
   color: var(--green-color-);
-}
-
-/*  */
-/* Media Query */
-/*  */
-
-@media (max-width: 1040px) {
-  .wrapper {
-    width: 90vw;
-  }
-  section {
-    padding: 80px 20px;
-  }
-  h2 {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 860px) {
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 25px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-}
-@media (max-width: 400px) {
-  h1 {
-    font-size: 23px;
-  }
-  h2 {
-    font-size: 18px;
-  }
 }
