@@ -9,11 +9,12 @@ import {
   faArrowRight,
   faCaretLeft,
   faCaretRight,
+  faCircle,
   faEnvelope,
   faExternalLinkSquareAlt,
 } from '@fortawesome/free-solid-svg-icons'
 import {} from '@fortawesome/free-regular-svg-icons'
-import { faCss3, faHtml5, faJs } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGithub, faHtml5, faJs } from '@fortawesome/free-brands-svg-icons'
 library.add(
   faExternalLinkSquareAlt,
   faArrowRight,
@@ -23,6 +24,8 @@ library.add(
   faCaretLeft,
   faCaretRight,
   faEnvelope,
+  faCircle,
+  faGithub,
 )
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

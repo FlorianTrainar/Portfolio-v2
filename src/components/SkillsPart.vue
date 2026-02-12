@@ -1,33 +1,25 @@
 <script setup>
-import { techList, techFuturList } from '../js/projectList'
+import { softList } from '@/js/softList'
 </script>
 <template>
-  <section id="education">
-    <h3>Compétences</h3>
-    <p class="mb-14 text-left md:text-center">
-      Mon parcours m’a permis de me familiariser et d’expérimenter divers outils de développement,
-      tels que :
-    </p>
+  <div class="bg-[var(--bg2)]">
+    <section id="education" class="wrapper">
+      <h3>Outils</h3>
+      <p class="mb-14 text-left md:text-center">
+        Je travaille avec des outils modernes et éprouvés, choisis pour leur fiabilité et leurs
+        performances.
+      </p>
 
-    <div class="soft-container mb-10">
-      <div class="soft" v-for="tech in techList" :key="tech.tech">
-        <img class="soft-logo" :src="tech.logo" alt="" />
-        <p class="soft-name">{{ tech.tech }}</p>
+      <div class="soft-container mb-10">
+        <div v-for="soft in softList" :key="soft.tech">
+          <a :href="soft.url" target="blank" class="soft">
+            <img class="soft-logo" :src="soft.logo" alt="" />
+            <p class="soft-name">{{ soft.tech }}</p>
+          </a>
+        </div>
       </div>
-    </div>
-
-    <p class="mb-14 text-left md:text-center">
-      Je poursuis actuellement mon apprentissage afin de développer mes compétences à travers de
-      nouvelles technologies, comme :
-    </p>
-
-    <div class="soft-container">
-      <div class="soft" v-for="tech in techFuturList" :key="tech.tech">
-        <p class="soft-name">{{ tech.tech }}</p>
-        <img class="soft-logo" :src="tech.logo" alt="" />
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 <style scoped>
 /* Skills */
@@ -40,7 +32,7 @@ import { techList, techFuturList } from '../js/projectList'
 }
 .soft:hover {
   @apply scale-125 cursor-pointer;
-  transition: 0.5s ease-in;
+  transition: 0.2s ease-in;
 }
 .soft-name {
   @apply text-sm md:text-base text-center italic;

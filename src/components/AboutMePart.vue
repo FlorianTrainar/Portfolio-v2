@@ -1,43 +1,50 @@
-<script setup></script>
+<script setup>
+import StartButton from './ui/StartButton.vue'
+</script>
 <template>
-  <section id="about-me">
-    <div class="flex items-center gap-4 lg:gap-10 lg:justify-center mb-12">
-      <img
-        class="relative scale-x-[-1] z-0 w-[100px] h-[100px] sm:h-[150px] sm:w-[150px] md:h-[180px] md:w-[180px] lg:h-[210px] lg:w-[210px] rounded-full border border-lime-500 shadow-md shadow-lime-600 object-cover bg-gray-900;"
-        src="../img/coucou.webp"
-        alt=""
-      />
-      <div class="flex flex-col gap-2 sm:gap-5 relative">
-        <h1 class="ml-2 text-2xl sm:text-3xl text-white">Florian Trainar</h1>
-        <h2 class="ml-2 hidden md:flex text-2xl lg:text-3xl text-white italic">
-          Developpeur Web / Web mobile
-        </h2>
-        <h2 class="ml-2 flex text-lg sm:text-2xl md:hidden text-white italic">Dev Web / Mobile</h2>
-        <h2 class="ml-2 text-2xl md:text-3xl text-white italic">Paris</h2>
-      </div>
+  <section class="wrapper">
+    <!-- H1 -->
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-space-grotesk">Développeur Web <span>Vue.js</span></h1>
     </div>
-    <h3>Profil</h3>
-    <div class="flex flex-col gap-6">
-      <p>
-        Passionné d'informatique et de multimedia depuis ma plus tendre enfance, j'ai récemment
-        décidé d'entamer une reconversion afin de transformer cet intérêt en métier.
-      </p>
-      <p>
-        Après avoir effectué la formation de
-        <a
-          href="https://www.lereacteur.io/cours-informatique/formation-developpeur-web/"
-          target="_blank"
-          >Développeur Web et Web Mobile</a
+
+    <div class="flex flex-col md:flex-row items-start gap-16">
+      <!-- COLONNE OFFRE -->
+      <div class="flex-2 max-w-xl">
+        <div class="flex flex-col gap-4 mb-8">
+          <h4>
+            Je conçois des applications et sites web <span>modernes</span> et
+            <span>performants</span>, pensés pour <span>évoluer</span> avec votre activité.
+          </h4>
+
+          <h4>
+            J’accompagne indépendants et petites structures dans la création de solutions
+            <span>sur mesure</span>, adaptées à vos enjeux et à vos contraintes de budget et de
+            délais.
+          </h4>
+        </div>
+
+        <StartButton> Discutons de votre projet </StartButton>
+      </div>
+
+      <!-- COLONNE IDENTITÉ -->
+      <div class="flex-1 flex flex-col items-center relative">
+        <!-- PHOTO -->
+        <div class="relative">
+          <img
+            src="../assets/imgs/profile2.png"
+            class="w-80 scale-110 object-contain saturate-80 contrast-95 brightness-95 drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] grayscale-[10%]"
+          />
+        </div>
+
+        <!-- SOCLE -->
+        <div
+          class="mt-2 bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl text-center shadow-sm shadow-black"
         >
-        au <a href="https://www.lereacteur.io/" target="_blank">Réacteur</a>, j'ai eu l'occasion
-        d'expérimenter et de mettre en pratique mes connaissances pour développer divers projets.
-      </p>
-      <p>
-        Animé d'une curiosité constante et d'une bonne culture technologique, j'aimerais poursuivre
-        mon parcours en intégrant une entreprise, association, ou toute autre institution qui me
-        permettrait de mettre mon travail, ma détermination et mon envie insatiable d'apprendre au
-        service de projets numériques diverses et innovants.
-      </p>
+          <h2 class="text-2xl font-medium">Florian Trainar</h2>
+          <h2 class="text-xl font-medium opacity-60">Développeur Web Freelance</h2>
+        </div>
+      </div>
     </div>
   </section>
 </template>

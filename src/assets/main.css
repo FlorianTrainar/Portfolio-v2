@@ -1,30 +1,27 @@
+@import './fonts/fonts.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './base.css';
 
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --background-color1-: #010f09;
-  --background-color2-: #131c14;
-  --orange-color-: orange;
-  --green-color-: rgb(137, 194, 112);
+  --bg1: #0f172a;
+  --bg2: #020617;
+  --high1: #6ee7b7; /*emerald-300*/
+  --high2: #7dd3fc; /*sky-300*/
 }
 
+.test {
+  @apply text-lime-300;
+}
+
+/* --- */
+
 body {
-  background: linear-gradient(
-    90deg,
-    var(--background-color1-),
-    var(--background-color2-),
-    var(--background-color1-)
-  );
-  font-family: Verdana, Tahoma, Arial, sans-serif;
-  font-size: 16px;
-  position: relative;
+  @apply bg-[var(--bg1)] text-slate-200;
 }
 
 .wrapper {
@@ -32,28 +29,14 @@ body {
 }
 
 h3 {
-  @apply text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-12;
+  @apply text-[var(--high2)] font-space-grotesk text-2xl font-bold mb-6 sm:mb-12;
+}
+h4 {
+  @apply text-center font-inter text-base md:text-lg lg:text-xl;
 }
 
 p {
-  @apply leading-5 md:leading-8 text-white  text-sm md:text-base lg:text-lg;
-}
-
-li {
-  @apply text-white italic;
-}
-
-a {
-  @apply font-bold text-white;
-}
-a:hover {
-  color: var(--orange-color-);
-}
-button {
-  background: none;
-}
-button:hover {
-  cursor: pointer;
+  @apply font-inter text-sm md:text-base lg:text-lg;
 }
 
 section {
@@ -61,6 +44,28 @@ section {
   scroll-margin-top: 80px;
 }
 
-main a {
-  color: var(--green-color-);
+span {
+  @apply text-[var(--high1)];
+}
+
+/* Design Animations */
+
+.wrapper-trans {
+  @apply transition-all duration-500 ease-out;
+}
+
+.theme-trans {
+  @apply transition-all duration-300 ease-out;
+}
+.btn-trans {
+  @apply transition-all duration-500 ease-out;
+}
+
+.header-changing {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.theme-changing {
+  transform: scale(1.15);
+  opacity: 0;
 }
