@@ -21,10 +21,8 @@ const emit = defineEmits(['update:title'])
       </div>
 
       <nav class="theme-trans flex gap-6 text-sm" :class="theme.navText">
-        <button>Accueil</button>
         <button>À propos</button>
         <button>Contact</button>
-        <button>Boutique</button>
         <button>Connexion</button>
       </nav>
     </header>
