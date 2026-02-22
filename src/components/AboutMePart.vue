@@ -42,7 +42,7 @@ import SectionBackground from './layouts/SectionBackground.vue'
 
           <!-- SOCLE -->
           <div
-            class="mt-2 bg-emerald-400/30 border border-emerald-50/50 backdrop-blur-md px-6 py-4 rounded-2xl text-center shadow-sm shadow-black"
+            class="mt-2 bg-emerald-400/30 border border-emerald-50/50 backdrop-blur-md px-6 py-3 rounded-2xl text-center shadow-sm shadow-black"
           >
             <h2 class="text-2xl font-medium">Florian Trainar</h2>
             <h2 class="text-xl font-medium opacity-80">Développeur Web Freelance</h2>

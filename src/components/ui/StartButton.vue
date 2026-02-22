@@ -1,13 +1,13 @@
 <template>
   <div class="flex justify-center">
-    <button>
+    <a href="mailto:florian.trainar@hotmail.fr?subject=Contact%20depuis%20votre%20site">
       <slot />
-    </button>
+    </a>
   </div>
 </template>
 
 <style scoped>
-button {
+a {
   @apply relative overflow-hidden
     font-space-grotesk font-bold text-lg sm:text-xl
     border border-amber-100/50
@@ -15,14 +15,14 @@ button {
     rounded-xl py-2 px-4 mt-10
     transition-all duration-300 ease-out;
 }
-button:hover {
+a:hover {
   @apply bg-amber-600 text-emerald-50 border-emerald-100/50 scale-110 -translate-y-0.5;
 }
-button:active {
+a:active {
   @apply translate-y-1 bg-amber-600/50;
 }
 
-button::after {
+a::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -31,7 +31,7 @@ button::after {
   transition: transform 500ms ease-out;
 }
 
-button:hover::after {
+a:hover::after {
   transform: translateX(100%);
 }
 </style>
