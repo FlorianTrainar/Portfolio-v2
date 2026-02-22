@@ -46,6 +46,7 @@ import SectionBackground from './layouts/SectionBackground.vue'
           >
             <h2 class="text-2xl font-medium">Florian Trainar</h2>
             <h2 class="text-xl font-medium opacity-80">Développeur Web Freelance</h2>
+            <h2 class="text-xl font-medium opacity-80">Paris</h2>
           </div>
         </div>
       </div>
