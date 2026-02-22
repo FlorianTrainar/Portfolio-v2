@@ -1,5 +1,6 @@
 <script setup>
 import StartButton from './ui/StartButton.vue'
+import SectionBackground from './layouts/SectionBackground.vue'
 const features = [
   {
     title: '🧑‍💼 Suivi de A à Z',
@@ -45,8 +46,8 @@ const features = [
 ]
 </script>
 <template>
-  <div class="bg-[var(--bg2)]">
-    <section id="offer" class="wrapper">
+  <SectionBackground id="offer" class="scroll-mt-20" bg="bg2" haloPosition="left">
+    <section class="wrapper">
       <h3>Mon offre</h3>
 
       <div class="flex flex-col gap-4">
@@ -59,5 +60,5 @@ const features = [
       </div>
       <StartButton>Parlons de vos besoins</StartButton>
     </section>
-  </div>
+  </SectionBackground>
 </template>

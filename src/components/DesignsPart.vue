@@ -7,6 +7,8 @@ import CreativeLayout from './designs/layouts/CreativeLayout.vue'
 import { creativeThemes } from './designs/themes/CreativeThemes'
 import StartButton from './ui/StartButton.vue'
 
+import SectionBackground from './layouts/SectionBackground.vue'
+
 const layouts = [
   {
     name: 'Professionnel',
@@ -30,7 +32,7 @@ const isThemeChanging = ref(false)
 const activeLayout = computed(() => layouts[activeLayoutIndex.value])
 const activeTheme = computed(() => activeLayout.value.themes[activeThemeIndex.value])
 
-const title = ref('Votre site, votre style')
+const title = ref('Votre site')
 
 // --- actions ---
 function nextLayout() {
@@ -49,49 +51,51 @@ function nextTheme() {
 </script>
 
 <template>
-  <section id="designs" class="wrapper">
-    <h3>Designs</h3>
-    <div class="flex flex-col items-center mb-10">
-      <h4 class="">Je m'adapte à <span>vos besoins</span></h4>
-      <h4>
-        Chaque design est entièrement <span>personnalisable</span> et adapté à votre activité.
-      </h4>
-    </div>
-    <div
-      class="w-full mx-auto gap-0 sm:gap-3 md:gap-8 md:w-[50%] flex justify-around items-center py-6 text-xl"
-    >
-      <!-- Layout button -->
-      <button @click="nextLayout" class="selector-btn">
-        <span class="label">Style</span>
-        <span class="value">{{ activeLayout.name }}</span>
-      </button>
-
-      <!-- Theme button -->
-      <button @click="nextTheme" class="selector-btn">
-        <span class="label">Thème</span>
-        <span class="value">{{ activeTheme.label }}</span>
-      </button>
-    </div>
-
-    <div class="w-full h-[70vh] overflow-hidden bg-white rounded-xl border border-gray-200">
-      <div class="p-1 bg-gray-300 rounded-t-xl border-b border-gray-400">
-        <font-awesome-icon icon="circle" class="h-3 text-red-600" />
-        <font-awesome-icon icon="circle" class="h-3 text-yellow-500" />
-        <font-awesome-icon icon="circle" class="h-3 text-green-600" />
+  <SectionBackground id="designs" class="scroll-mt-20" bg="bg1" haloPosition="center">
+    <section class="wrapper">
+      <h3>Designs</h3>
+      <div class="flex flex-col items-center mb-10">
+        <h4 class="">Je m'adapte à <span>vos besoins</span></h4>
+        <h4>
+          Chaque design est entièrement <span>personnalisable</span> et adapté à votre activité.
+        </h4>
       </div>
-      <Transition name="fade" mode="out-in">
-        <component
-          :is="activeLayout.component"
-          :key="activeLayout.key"
-          :theme="activeTheme"
-          :title="title"
-          :themeChanging="isThemeChanging"
-          @update:title="title = $event"
-        />
-      </Transition>
-    </div>
-    <StartButton>Réalisons votre vision</StartButton>
-  </section>
+      <div
+        class="w-full mx-auto gap-0 sm:gap-3 md:gap-8 md:w-[50%] flex justify-around items-center py-6 text-xl"
+      >
+        <!-- Layout button -->
+        <button @click="nextLayout" class="selector-btn">
+          <span class="label">Style</span>
+          <span class="value">{{ activeLayout.name }}</span>
+        </button>
+
+        <!-- Theme button -->
+        <button @click="nextTheme" class="selector-btn">
+          <span class="label">Thème</span>
+          <span class="value">{{ activeTheme.label }}</span>
+        </button>
+      </div>
+
+      <div class="w-full h-[70vh] overflow-hidden bg-white rounded-xl border border-gray-200">
+        <div class="p-1 bg-gray-300 rounded-t-xl border-b border-gray-400">
+          <font-awesome-icon icon="circle" class="h-3 text-red-600" />
+          <font-awesome-icon icon="circle" class="h-3 text-yellow-500" />
+          <font-awesome-icon icon="circle" class="h-3 text-green-600" />
+        </div>
+        <Transition name="fade" mode="out-in">
+          <component
+            :is="activeLayout.component"
+            :key="activeLayout.key"
+            :theme="activeTheme"
+            :title="title"
+            :themeChanging="isThemeChanging"
+            @update:title="title = $event"
+          />
+        </Transition>
+      </div>
+      <StartButton>Réalisons votre vision</StartButton>
+    </section>
+  </SectionBackground>
 </template>
 <style scoped>
 .selector-btn {

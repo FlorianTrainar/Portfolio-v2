@@ -10,22 +10,22 @@
 :root {
   --bg1: #0f172a;
   --bg2: #020617;
-  --high1: #6ee7b7; /*emerald-300*/
-  --high2: #7dd3fc; /*sky-300*/
+  --high1: #34d399; /*emerald-400*/
+  --high2: #e89c1c; /*sky-300*/
 }
 
 .test {
-  @apply text-lime-300;
+  @apply text-rose-300;
 }
 
 /* --- */
 
 body {
-  @apply bg-[var(--bg1)] text-slate-200;
+  @apply bg-[var(--bg1)] text-slate-100;
 }
 
 .wrapper {
-  @apply mx-auto w-[90vw] max-w-5xl;
+  @apply mx-auto md:w-[90vw] max-w-5xl;
 }
 
 h3 {
@@ -41,11 +41,24 @@ p {
 
 section {
   @apply px-4 md:px-10 pt-10 pb-16;
-  scroll-margin-top: 80px;
 }
 
 span {
   @apply text-[var(--high1)];
+}
+
+/* Grain */
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+
+  background-image: radial-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+
+  background-size: 3px 3px;
 }
 
 /* Design Animations */

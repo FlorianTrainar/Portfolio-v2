@@ -10,16 +10,16 @@
 button {
   @apply relative overflow-hidden
     font-space-grotesk font-bold text-lg sm:text-xl
-    border border-sky-100/50
-    bg-sky-600/50 text-sky-100
+    border border-amber-100/50
+    bg-amber-600/70 text-sky-100
     rounded-xl py-2 px-4 mt-10
     transition-all duration-300 ease-out;
 }
 button:hover {
-  @apply bg-emerald-600 text-emerald-50 border-emerald-100/50 scale-110 -translate-y-0.5;
+  @apply bg-amber-600 text-emerald-50 border-emerald-100/50 scale-110 -translate-y-0.5;
 }
 button:active {
-  @apply translate-y-1 bg-emerald-600/50;
+  @apply translate-y-1 bg-amber-600/50;
 }
 
 button::after {

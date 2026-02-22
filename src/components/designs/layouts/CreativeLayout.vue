@@ -12,14 +12,14 @@ const emit = defineEmits(['update:title'])
   <div class="wrapper-trans h-full flex flex-col" :class="[theme.bg, theme.text]">
     <!-- Header -->
     <header
-      class="wrapper-trans flex items-center justify-between px-8 py-6"
+      class="wrapper-trans flex items-center justify-between px-4 md:px-8 py-2 sm:py-4 md:py-6"
       :class="[theme.headerBg, themeChanging && 'header-changing']"
     >
-      <div class="flex items-center gap-3">
-        <img v-if="theme.logo" :src="theme.logo" alt="Logo" class="h-16" />
+      <div class="flex items-center">
+        <img v-if="theme.logo" :src="theme.logo" alt="Logo" class="h-8 sm:h12 md:h-16" />
       </div>
 
-      <nav class="theme-trans flex gap-8 text-lg font-medium">
+      <nav class="theme-trans flex gap-3 md:gap-8 md:text-lg font-medium">
         <button :class="theme.navText">Projets</button>
         <button :class="theme.navText">Studio</button>
         <button :class="theme.navText">Contact</button>
@@ -27,7 +27,7 @@ const emit = defineEmits(['update:title'])
     </header>
 
     <!-- Hero -->
-    <main class="flex-1 flex flex-col items-center justify-center text-center px-6">
+    <main class="flex-1 flex flex-col items-center justify-center text-center px-6 mb-10">
       <!-- Titre  -->
       <textarea
         :value="title"
@@ -38,14 +38,14 @@ const emit = defineEmits(['update:title'])
       />
 
       <!-- Accroche -->
-      <p class="theme-trans mt-6 max-w-2xl text-base sm:text-lg" :class="theme.textSoft">
+      <p class="theme-trans mt-4 max-w-2xl text-sm sm:text-base sm:text-lg" :class="theme.textSoft">
         Une experience digitale impactante et originale, pensée pour raconter votre histoire et
         donner du sens à votre présence en ligne.
       </p>
 
       <!-- CTA -->
       <button
-        class="btn-trans font-poppins font-semibold text-xl mt-12 px-8 py-4 rounded-full uppercase tracking-wide transition-all duration-300 ease-out hover:-translate-y-1 active:translate-y-0"
+        class="btn-trans font-poppins font-semibold md:text-xl mt-12 px-4 md:px-8 py-4 rounded-full uppercase tracking-wide transition-all duration-300 ease-out hover:-translate-y-1 active:translate-y-0"
         :class="[theme.button, themeChanging && 'theme-changing']"
       >
         Découvrir l’univers
